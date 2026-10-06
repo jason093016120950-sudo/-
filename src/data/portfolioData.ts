@@ -4,6 +4,12 @@
  * Easily modifiable for customization.
  */
 
+import avatarImg from '../assets/images/avatar_bowen_developer_1791288479977.jpg';
+import agentImg from '../assets/images/project_agent_engine_1791288424354.jpg';
+import novapayImg from '../assets/images/project_novapay_ledger_1791288440419.jpg';
+import crdtImg from '../assets/images/project_crdt_sync_1791288453538.jpg';
+import devlensImg from '../assets/images/project_devlens_telemetry_1791288465758.jpg';
+
 export interface ProjectMetric {
   label: string;
   value: string;
@@ -44,7 +50,7 @@ export const PERSONAL_INFO = {
   valueProp: "專注於高可用後端架構、跨平台應用與 AI Agent 整合。以工程嚴謹性平衡分散式並發、低延遲資料傳輸與智慧模型決策。",
   location: "台北 (Taipei, Taiwan) · Remote Available",
   email: "jason093016120950@gmail.com",
-  avatarImage: "/src/assets/images/avatar_bowen_developer_1791288479977.jpg",
+  avatarImage: avatarImg,
   availabilityStatus: "開放高階全端架構與 AI 系統顧問合作",
   socials: {
     github: "https://github.com/bowenchen-dev",
@@ -84,7 +90,7 @@ export const PROJECTS: Project[] = [
     year: "2026",
     impactHeadline: "突破並行工具呼叫限制，日均處理 320 萬+ 次 Agent 決策，端到端延遲降低 38%",
     summary: "專為複雜長流程與自主決策設計的分散式 Agent 調度引擎。透過有向無環圖 (DAG) 編排、狀態機持久化與背壓機制，解決大型語言模型 Tool Calling 超時與重試失序問題。",
-    previewImage: "/src/assets/images/project_agent_engine_1791288424354.jpg",
+    previewImage: agentImg,
     metrics: [
       { label: "每日調度量", value: "3.2M+ 次" },
       { label: "平均延遲縮減", value: "-38%" },
@@ -110,7 +116,7 @@ export const PROJECTS: Project[] = [
     year: "2025 - 2026",
     impactHeadline: "支撐電商購物節 12,000 TPS 尖峰交易，實現分散式兩階段提交與冪等重試零掉單",
     summary: "金融級複式簿記（Double-Entry Bookkeeping）帳務核心。採用事件溯源（Event Sourcing）與 SAGA 補償機制，提供高並發環境下的絕對資金一致性保證。",
-    previewImage: "/src/assets/images/project_novapay_ledger_1791288440419.jpg",
+    previewImage: novapayImg,
     metrics: [
       { label: "尖峰吞吐", value: "12,000 TPS" },
       { label: "帳務掉單率", value: "0.00%" },
@@ -136,7 +142,7 @@ export const PROJECTS: Project[] = [
     year: "2025",
     impactHeadline: "基於 CRDT 與 Rust Wasm 實現百人同畫布零衝突並行編輯，客戶端記憶體開銷縮減 65%",
     summary: "適用於無邊界白板與多維表格的即時多向同步引擎。透過 Rust 編譯為 WebAssembly 處理歷史版本樹剪枝與狀態向量比對，貫徹離線優先（Local-First）體驗。",
-    previewImage: "/src/assets/images/project_crdt_sync_1791288453538.jpg",
+    previewImage: crdtImg,
     metrics: [
       { label: "同屏協作人數", value: "100+ 人" },
       { label: "記憶體降低", value: "65%" },
@@ -162,7 +168,7 @@ export const PROJECTS: Project[] = [
     year: "2024 - 2025",
     impactHeadline: "整合分散式鏈路追蹤與 eBPF 零侵入探針，系統平均故障排除時間 (MTTR) 縮短 55%",
     summary: "企業級微服務鏈路拓撲與異常關聯診斷系統。無縫解析分散式 Span 調用鏈，結合時序列式資料庫 ClickHouse 提供毫秒級多維度關聯查詢與火災圖分析。",
-    previewImage: "/src/assets/images/project_devlens_telemetry_1791288465758.jpg",
+    previewImage: devlensImg,
     metrics: [
       { label: "MTTR 縮短", value: "-55%" },
       { label: "eBPF 探針開銷", value: "<1.2% CPU" },
