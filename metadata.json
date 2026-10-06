@@ -1,0 +1,6 @@
+{
+  "name": "陳泊華 (Bowen) | 全端與 AI 系統工程作品集",
+  "description": "陳泊華 (Bowen Chen) 個人技術作品集。專注於高可用後端架構、分散式系統與 AI Agent 整合。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
